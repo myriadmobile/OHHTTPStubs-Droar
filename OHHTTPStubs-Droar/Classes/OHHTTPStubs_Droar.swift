@@ -18,6 +18,7 @@ import OHHTTPStubs_Bushel
     static var cells = [DroarCell]()
     static var responseTime: TimeInterval?
     static var stubDescriptor: HTTPStubsDescriptor?
+    static var networkErrorRate: Float = 0
 }
 
 extension OHHTTPStubs_Droar: DroarKnob {
@@ -25,6 +26,7 @@ extension OHHTTPStubs_Droar: DroarKnob {
         case enabled = 0
         case responseTime
         case networkError
+        case clearStubs
     }
     
     public func droarKnobDidFinishRegistering() {
@@ -63,19 +65,13 @@ extension OHHTTPStubs_Droar: DroarKnob {
             }
             
         case .networkError:
-            let enabled = OHHTTPStubs_Droar.stubDescriptor != nil
-            cell = DroarSwitchCell.create(title: "Simulate Network Error", defaultValue: enabled, allowSelection: false) { (newValue) in
-                if newValue {
-                    OHHTTPStubs_Droar.stubDescriptor = HTTPStubs.stubRequests { (request) -> Bool in
-                        return true
-                    } withStubResponse: { (request) -> HTTPStubsResponse in
-                        return HTTPStubsResponse(error: DroarMockError())
-                    }
-                } else if let descriptor = OHHTTPStubs_Droar.stubDescriptor {
-                    HTTPStubs.removeStub(descriptor)
-                    OHHTTPStubs_Droar.stubDescriptor = nil
-                }
-            }
+            cell = DroarSliderCell.create(title: "Network Error %", value: OHHTTPStubs_Droar.networkErrorRate, min: 0, max: 100, allowSelection: false, onValueChanged: { [weak self] (newValue) in
+                OHHTTPStubs_Droar.networkErrorRate = newValue
+                self?.addErrorStub()
+            })
+            
+        case .clearStubs:
+            return DroarLabelCell.create(title: "Clear Mock Stubs", detail: nil, allowSelection: true)
         }
         
         cell.setEnabled(HTTPStubs.isEnabled())
@@ -86,8 +82,28 @@ extension OHHTTPStubs_Droar: DroarKnob {
     
     public func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {
         switch Field(rawValue: selectedIndex) {
+        case .clearStubs:
+            let alert = UIAlertController(title: "Warning", message: "This action isn't reversible.  You'll have to close and re-launch the app for stubs to be reinstantiated", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Clear Stubs", style: .destructive, handler: { [weak self] (_) in
+                HTTPStubs.removeAllStubs()
+                self?.addErrorStub()
+            }))
+            Droar.present(alert, animated: true, completion: nil)
         default:
             ()
+        }
+    }
+    
+    func addErrorStub() {        
+        if let descriptor = OHHTTPStubs_Droar.stubDescriptor {
+            HTTPStubs.removeStub(descriptor)
+        }
+        
+        OHHTTPStubs_Droar.stubDescriptor = HTTPStubs.stubRequests { (request) -> Bool in
+            return Float.random(in: 0 ... 100) < OHHTTPStubs_Droar.networkErrorRate
+        } withStubResponse: { (request) -> HTTPStubsResponse in
+            return HTTPStubsResponse(error: DroarMockError())
         }
     }
 }

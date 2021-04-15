@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.9.1)
-  - Droar (2.0.1):
+  - Droar (2.0.3):
     - SDVersion
-  - OHHTTPStubs-Droar (1.0.0):
+  - OHHTTPStubs-Droar (1.0.1):
     - Droar
     - OHHTTPStubs_Bushel
   - OHHTTPStubs_Bushel (9.2.2):
@@ -37,8 +37,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Droar: bd8a5213c4bc0bd5f31a403552fcf1ef83041ab5
-  OHHTTPStubs-Droar: 7e7ce9aa8c3eb0031c72b3d64f25db3723429236
+  Droar: e638c4c74ea8295c43fedb6a5f83e65c4bbac346
+  OHHTTPStubs-Droar: 97090ea16f1b8dcf630ad6a765a9505b37e65744
   OHHTTPStubs_Bushel: 03b2baf26d8e765551c4cfd9cd90a172cb3f7900
   SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
 

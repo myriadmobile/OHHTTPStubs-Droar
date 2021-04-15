@@ -1226,6 +1226,37 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00DD8365BA0E4D62452CA51548A3D0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA4FA8B1C6F62A7CDC728C533077A2B /* OHHTTPStubs-Droar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs_Droar;
+				PRODUCT_NAME = OHHTTPStubs_Droar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1449,36 +1480,6 @@
 			};
 			name = Debug;
 		};
-		4735E4F2331CC9B74ED564E44FD76EE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 725B9174D032A3CEBE4EA63D77F4DB35 /* OHHTTPStubs-Droar.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar.modulemap";
-				PRODUCT_MODULE_NAME = OHHTTPStubs_Droar;
-				PRODUCT_NAME = OHHTTPStubs_Droar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		5E5A5309268446F76A7A82BC97E32060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 108584926A21777E6DDDDE1C7A44632C /* OHHTTPStubs_Bushel.release.xcconfig */;
@@ -1539,37 +1540,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		74F47B4F5AB609D12FAAC88AFA7378B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CA4FA8B1C6F62A7CDC728C533077A2B /* OHHTTPStubs-Droar.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar.modulemap";
-				PRODUCT_MODULE_NAME = OHHTTPStubs_Droar;
-				PRODUCT_NAME = OHHTTPStubs_Droar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		7A990D4D7A394E906F2DE82D639771CF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1756,6 +1726,36 @@
 			};
 			name = Release;
 		};
+		E1BE84F948789E661C535077B02ED3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 725B9174D032A3CEBE4EA63D77F4DB35 /* OHHTTPStubs-Droar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-Droar/OHHTTPStubs-Droar.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs_Droar;
+				PRODUCT_NAME = OHHTTPStubs_Droar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FB71E90C7C330474DF0B704F649B521D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B6142A8019EFDD5CA52BC12D549BEE7 /* Pods-OHHTTPStubs-Droar_Tests.release.xcconfig */;
@@ -1840,8 +1840,8 @@
 		E106D0A9802EF7E0AC0A71887CD625B6 /* Build configuration list for PBXNativeTarget "OHHTTPStubs-Droar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4735E4F2331CC9B74ED564E44FD76EE1 /* Debug */,
-				74F47B4F5AB609D12FAAC88AFA7378B4 /* Release */,
+				E1BE84F948789E661C535077B02ED3B8 /* Debug */,
+				00DD8365BA0E4D62452CA51548A3D0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
