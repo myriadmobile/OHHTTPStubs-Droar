@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Droar (2.0.1):
+    - SDVersion
+  - OHHTTPStubs-Droar (1.0.0):
+    - Droar
+    - OHHTTPStubs_Bushel
+  - OHHTTPStubs_Bushel (9.2.2):
+    - OHHTTPStubs_Bushel/Default (= 9.2.2)
+  - OHHTTPStubs_Bushel/Core (9.2.2)
+  - OHHTTPStubs_Bushel/Default (9.2.2):
+    - OHHTTPStubs_Bushel/Core
+    - OHHTTPStubs_Bushel/JSON
+    - OHHTTPStubs_Bushel/NSURLSession
+    - OHHTTPStubs_Bushel/OHPathHelpers
+  - OHHTTPStubs_Bushel/JSON (9.2.2):
+    - OHHTTPStubs_Bushel/Core
+  - OHHTTPStubs_Bushel/NSURLSession (9.2.2):
+    - OHHTTPStubs_Bushel/Core
+  - OHHTTPStubs_Bushel/OHPathHelpers (9.2.2)
+  - SDVersion (4.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - OHHTTPStubs-Droar (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Droar
+    - OHHTTPStubs_Bushel
+    - SDVersion
+
+EXTERNAL SOURCES:
+  OHHTTPStubs-Droar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Droar: bd8a5213c4bc0bd5f31a403552fcf1ef83041ab5
+  OHHTTPStubs-Droar: 7e7ce9aa8c3eb0031c72b3d64f25db3723429236
+  OHHTTPStubs_Bushel: 03b2baf26d8e765551c4cfd9cd90a172cb3f7900
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
+
+PODFILE CHECKSUM: fbf7740fa014910a64b594a2f48be3d62c0e5365
+
+COCOAPODS: 1.10.1

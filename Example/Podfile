@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'OHHTTPStubs-Droar_Example' do
   pod 'OHHTTPStubs-Droar', :path => '../'
+  pod 'Alamofire'
 
   target 'OHHTTPStubs-Droar_Tests' do
     inherit! :search_paths

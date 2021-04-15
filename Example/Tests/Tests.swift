@@ -1,5 +1,5 @@
 import XCTest
-import OHHTTPStubs-Droar
+import OHHTTPStubs_Droar
 
 class Tests: XCTestCase {
     

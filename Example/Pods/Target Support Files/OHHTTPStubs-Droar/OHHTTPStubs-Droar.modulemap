@@ -1,0 +1,6 @@
+framework module OHHTTPStubs_Droar {
+  umbrella header "OHHTTPStubs-Droar-umbrella.h"
+
+  export *
+  module * { export * }
+}

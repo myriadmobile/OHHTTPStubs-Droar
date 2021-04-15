@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025E069B262797D9003FBFD1 /* joke.json in Resources */ = {isa = PBXBuildFile; fileRef = 025E069A262797D9003FBFD1 /* joke.json */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025E069A262797D9003FBFD1 /* joke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = joke.json; sourceTree = "<group>"; };
 		37487F77904955D212C781E5 /* Pods_OHHTTPStubs_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OHHTTPStubs_Droar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD84BFC0B0F6B3EB530A597 /* Pods-OHHTTPStubs-Droar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OHHTTPStubs-Droar_Example.debug.xcconfig"; path = "Target Support Files/Pods-OHHTTPStubs-Droar_Example/Pods-OHHTTPStubs-Droar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5AF19A703D5C4DA0014F0E10 /* Pods-OHHTTPStubs-Droar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OHHTTPStubs-Droar_Example.release.xcconfig"; path = "Target Support Files/Pods-OHHTTPStubs-Droar_Example/Pods-OHHTTPStubs-Droar_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,9 +44,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7859E6E6448196E7E655F75C /* Pods-OHHTTPStubs-Droar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OHHTTPStubs-Droar_Tests.release.xcconfig"; path = "Target Support Files/Pods-OHHTTPStubs-Droar_Tests/Pods-OHHTTPStubs-Droar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7ED5AE3BC7F2458C88C11182 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8906997DBB68010B3D5E7D6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B5E0975AEA2186BEE87658CD /* OHHTTPStubs-Droar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "OHHTTPStubs-Droar.podspec"; path = "../OHHTTPStubs-Droar.podspec"; sourceTree = "<group>"; };
+		7ED5AE3BC7F2458C88C11182 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8906997DBB68010B3D5E7D6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B5E0975AEA2186BEE87658CD /* OHHTTPStubs-Droar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "OHHTTPStubs-Droar.podspec"; path = "../OHHTTPStubs-Droar.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CEDFA0F35022BB305559325A /* Pods_OHHTTPStubs_Droar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OHHTTPStubs_Droar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C2150FAE272544C115CE77 /* Pods-OHHTTPStubs-Droar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OHHTTPStubs-Droar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OHHTTPStubs-Droar_Tests/Pods-OHHTTPStubs-Droar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				025E069A262797D9003FBFD1 /* joke.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,7 +150,6 @@
 				D0C2150FAE272544C115CE77 /* Pods-OHHTTPStubs-Droar_Tests.debug.xcconfig */,
 				7859E6E6448196E7E655F75C /* Pods-OHHTTPStubs-Droar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -248,6 +251,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				025E069B262797D9003FBFD1 /* joke.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +273,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OHHTTPStubs-Droar_Example/Pods-OHHTTPStubs-Droar_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Droar/Droar.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-Droar/OHHTTPStubs_Droar.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs_Bushel/OHHTTPStubs_Bushel.framework",
+				"${BUILT_PRODUCTS_DIR}/SDVersion/SDVersion.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Droar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs_Droar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs_Bushel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDVersion.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
