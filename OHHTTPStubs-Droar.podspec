@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OHHTTPStubs-Droar'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'An OHHTTPStubs plugin for Droar'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ This adds fields for controlling OHHTTPStubs straight in Droar.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.swift_versions = ['4.0', '4.2', '5.2']
 
   s.source_files = 'OHHTTPStubs-Droar/Classes/**/*'
   
